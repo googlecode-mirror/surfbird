@@ -6,8 +6,6 @@ class Registration extends Controller {
       $this->    load->    helper('url');
       $this-> load-> helper('form');
       $this->load->view('header');
-
-
    }
   function index()
   {

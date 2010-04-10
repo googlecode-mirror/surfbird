@@ -10,16 +10,16 @@ body {
 </style>
 </head>
 <body>
-  <h1>Registration Form</h1>
+  <h1>Registration Form </h1>
   <p>Please complete the following form:</p>
   <?php echo form_open('form/submit'); ?>
   <p><label for="fname">Full Name: </label><br /><?php echo form_input($fname); ?></p>
   <p><label for="email">E-mail: </label><br /><?php echo form_input($email); ?></p>
   <p>Please select one or more seminars, that you would like to attend</p>
-  <p><?php echo form_checkbox($purpose); ?> <label for="purpose">Purpose of Prayer</label></p>
-  <p><?php echo form_checkbox($prepare); ?> <label for="prepare">Prepare for Prayer</label></p>
-  <p><?php echo form_checkbox($principles); ?> <label for="principles">Principles of Prayer</label></p>
-  <p><?php echo form_checkbox($power); ?> <label for="power">Power in Prayer</label></p>
+  <p><?php echo form_checkbox($purpose); ?> <label for="purpose">Пассажир</label></p>
+  <p><?php echo form_checkbox($prepare); ?> <label for="prepare">Водитель</label></p>
+  <p><?php echo form_checkbox($principles); ?> <label for="principles">Совместно</label></p>
+  <p><?php echo form_checkbox($power); ?> <label for="power">Я мудак и член партии Справедливая Россия</label></p>
   <p><label for="comments">Comments: </label><br /><?php echo form_textarea($comments); ?></p>
   <?php echo form_submit('submit', 'Submit'); ?>
   <?php echo form_close(); ?>
