@@ -7,9 +7,9 @@
 	<META name="keywords" content="SirfBird, Surfing Bird, попутчик, пробки">
 
 <!-- Icons -->
-	<LINK rel="icon" href="images/icons/favicon.ico" type="image/vnd.microsoft.icon">
-	<LINK rel="shortcut icon" href="images/icons/favicon.ico">
-	<LINK rel="apple-touch-icon" href="images/icons/icon_big.png">
+	<LINK rel="icon" href="<?=base_url()?>images/icons/favicon.ico" type="image/vnd.microsoft.icon">
+	<LINK rel="shortcut icon" href="<?=base_url()?>images/icons/favicon.ico">
+	<LINK rel="apple-touch-icon" href="<?=base_url()?>images/icons/icon_big.png">
 
 <!-- CSS -->
 	<LINK rel="stylesheet" href="<?=base_url()?>css/style.css" type="text/css">
@@ -19,7 +19,7 @@
 
 </HEAD>
 <DIV id="header">
-<A href="index.html" id="SBLogo" title="SurfBird.com"><IMG src="./images/SBlogo.png" width="62" height="55" alt="Surfing Bird Logo"></A>
+<A href="<?=base_url()?>" id="SBLogo" title="SurfBird.com"><IMG src="<?=base_url()?>images/SBlogo.png" width="62" height="55" alt="Surfing Bird Logo"></A>
 
 <DIV id="headerNavigation">
 <SPAN id="loggedin-welcome" style="display: none">Привет, <SPAN id="loggedin-username"></SPAN>!</SPAN>
@@ -37,8 +37,8 @@
 </DIV><!-- #header -->
 <DIV id="mainNavigation">
 <UL>
-	<LI class="active"><A href="#" title="Page One"><STRONG>One</STRONG></A></LI>
-	<LI><A href="#" title="Page Two">Two</A></LI>
+	<LI class="active"><A href="<?=base_url()?>" title="Home"><STRONG>One</STRONG></A></LI>
+	<LI><A href="/registration/" title="Registration">Two</A></LI>
 	<LI><A href="#" title="Page Three">Three</A></LI>
 	<LI><A href="#" title="Page Four">Four</A></LI>
 	<LI><A href="#" title="Page Five">Five</A></LI>
