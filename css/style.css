@@ -1,0 +1,372 @@
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,font,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td
+{
+	background: transparent;
+	border: 0;
+	font-family: inherit;
+	font-size: 100%;
+	font-style: inherit;
+	font-weight: inherit;
+	margin: 0;
+	outline: 0;
+	padding: 0;
+	vertical-align: baseline;
+}
+body
+{
+	background: white;
+	color: black;
+	line-height: 1;
+}
+ol,ul
+{
+	list-style: none;
+}
+table
+{
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+caption,th,td
+{
+	font-weight: normal;
+	text-align: left;
+}
+blockquote:before,blockquote:after,q:before,q:after
+{
+	content: "";
+}
+blockquote,q
+{
+	quotes: "" "";
+}
+
+body
+{
+	font-family: Helvetica,Arial,sans-serif;
+	font-size: 14px;
+	line-height: 1.357em;
+}
+strong
+{
+	font-weight: bold;
+}
+em
+{
+	font-style: italic;
+}
+a
+{
+	color: #00AFF0;
+}
+a:hover
+{
+	color: #00AFF0;
+	border-bottom: 1px dashed #00AFF0;
+}
+a:visited
+{
+	color: #62a8f0;
+}
+h1,h2,h3,h4,h5,h6
+{
+	font-family: Helvetica,Arial,sans-serif;
+	font-weight: bold;
+}
+h1
+{
+	color: #525252;
+	font-size: 2.462em;
+	letter-spacing: -0.03em;
+	line-height: 1.19em;
+	margin-bottom: 15px;
+}
+h2
+{
+	color: #2C2C2C;
+	font-size: 1.286em;
+	line-height: 1.056em;
+	padding: 9px 0 10px 0;
+}
+h3,h4,h5,h6
+{
+	color: black;
+	font-size: 1em;
+	line-height: 1.357em;
+	margin: 0;
+}
+sup
+{
+	font-size: .65em;
+	line-height: .65em;
+	vertical-align: super;
+}
+sub
+{
+	font-size: .85em;
+	vertical-align: sub;
+}
+
+#sidebar #sidebarContent
+{
+	padding: 60px 20px 0 17px;
+}
+body
+{
+	background: white url(images/top_gradient.gif) top left repeat-x;
+	position: relative;
+}
+#header
+{
+	font-size: .786em;
+	font-weight: bold;
+	line-height: 47px;
+	margin: 0 auto 5px auto;
+	overflow: hidden;
+	padding: 20px 0 0 0;
+	width: 960px;
+}
+#header form
+{
+	display: inline;
+}
+#footer fieldset,#header fieldset
+{
+	display: inline;
+	line-height: 1em;
+	vertical-align: middle;
+}
+#header #searchSet
+{
+	display: inline;
+}
+#SBLogo
+{
+	float: left;
+	overflow: auto;
+	text-decoration: none;
+	width: 15%;
+}
+#SBLogo img
+{
+	display: block;
+	display: inline;
+	float: left;
+	margin: 0 15px 0 20px;
+}
+#SBLogo span
+{
+	color: #7FD7F7;
+	display: block;
+	float: left;
+}
+#headerNavigation
+{
+	color: #AFB4B4;
+	float: right;
+	text-align: right;
+	width: 85%;
+}
+#headerNavigation a
+{
+	color: #00AFF0;
+	margin: 0 4px;
+	text-decoration: none;
+}
+#headerNavigation input
+{
+	margin: 0 20px 0 6px;
+}
+#headerNavigation span
+{
+	color: #636363;
+	margin: 0;
+}
+#footer
+{
+	background: white url(images/bottom_gradient.png) top left repeat-x;
+	clear: both;
+	color: #AFB4B4;
+	font-size: .786em;
+	height: 75px;
+	margin: 60px 0 0 0;
+	padding: 14px;
+}
+#footer a
+{
+	color: #636363;
+	margin: 0 4px;
+	text-decoration: none;
+}
+#footer a:hover
+{
+	color: #00AFF0;
+	text-decoration: none;
+}
+#footer strong
+{
+	color: #7FD7F7;
+	margin: 0 4px;
+}
+#footerNavigation
+{
+	float: left;
+	line-height: 26px!important;
+	padding: 0 0 0 20px;
+}
+#footerNavigation select
+{
+	margin: 0 10px 0 0;
+}
+#footerNavigation .flag
+{
+	margin-top: 5px;
+}
+#legalLinks
+{
+	float: right;
+	line-height: 26px!important;
+	padding: 0 20px 0 0;
+	text-align: right;
+}
+#mainNavigation
+{
+	/*background: white url(images/navigation_blue.png) bottom left repeat-x;*/
+	background: #83ddff;
+	border-bottom: 1px solid #00AFF0;
+	min-height: 31px;
+}
+* html #mainNavigation
+{
+	height: 31px;
+}
+#mainNavigation ul,#subNavigation ul
+{
+	font-family: Helvetica,Arial,sans-serif;
+	margin: 0 auto;
+	overflow: hidden;
+	padding: 0 0 0 100px;
+	width: 860px;
+}
+#mainNavigation li
+{
+	display: inline;
+	float: left;
+	font-size: 1.143em;
+	font-weight: bold;
+	margin: 0 -20px 0 30px;
+	min-height: 24px;
+	padding-left: 2px;
+}
+* html #mainNavigation li
+{
+	height: 25px;
+}
+#mainNavigation li a,#mainNavigation li strong
+{
+	color: #636363;
+	display: block;
+	min-height: 20px;
+	padding: 8px 10px 4px 8px;
+	text-decoration: none;
+}
+#mainNavigation li.active a
+{
+	cursor: pointer;
+	padding: 0;
+}
+#mainNavigation li.active,#mainNavigation li.active a,#mainNavigation li.active strong
+{
+	background: #00AFF0;
+	color: white;
+}
+#mainNavigation li.active,#mainNavigation li.hover
+{
+	background: #00AFF0 url(/images/navi_top_left.png) top left no-repeat;
+}
+#mainNavigation li.active strong,#mainNavigation li.hover a
+{
+	background: #00AFF0 url(/images/navi_top_right.png) top right no-repeat;
+}
+#mainNavigation li.hover a
+{
+	color: white;
+}
+#mainNavigation ul.shopWithRibbon li#main-menu-shop
+{
+	background: url(/images/navigation_blue_ribbon.png) no-repeat bottom right;
+	border-left: 1px solid white;
+	border-right: 1px solid white;
+}
+#mainNavigation ul.shopWithRibbon li#main-menu-shop a,#mainNavigation ul.shopWithRibbon li#main-menu-shop strong
+{
+	padding: 8px 14px 4px 7px;
+}
+#mainNavigation ul.shopWithRibbon li#main-menu-shop.active,#mainNavigation ul.shopWithRibbon li#main-menu-shop.hover
+{
+	background: #7FD7F7 url(/Skype_files/navi_top_left.png) top left no-repeat;
+	border: none;
+}
+#mainNavigation ul.shopWithRibbon li#main-menu-shop.active strong,#mainNavigation ul.shopWithRibbon li#main-menu-shop.hover a
+{
+	background: #7FD7F7 url(/Skype_files/navi_top_right_ribbon.png) top right no-repeat;
+	padding: 8px 15px 4px 8px;
+}
+#mainNavigation ul.shopWithRibbon li#main-menu-shop.active a
+{
+	padding: 0;
+}
+#mainNavigation ul.shopWithGift li#main-menu-shop
+{
+	background: url(/Skype_files/navigation_blue_gift.png) no-repeat bottom left;
+	padding-left: 25px;
+}
+#mainNavigation ul.shopWithGift li#main-menu-shop a,#mainNavigation ul.shopWithGift li#main-menu-shop strong
+{
+	padding: 8px 10px 4px 6px;
+}
+#mainNavigation ul.shopWithGift li#main-menu-shop.active,#mainNavigation ul.shopWithGift li#main-menu-shop.hover
+{
+	background: #7FD7F7 url(/Skype_files/navi_top_left_gift.png) no-repeat top left;
+}
+#mainNavigation ul.shopWithGift li#main-menu-shop.active a
+{
+	padding: 0;
+}
+#subNavigation
+{
+	position: relative;
+	z-index: 9999;
+}
+#subNavigation ul
+{
+	font-size: .929em;
+}
+#subNavigation li
+{
+	background: url(/Skype_files/subnavi_back.png);
+	display: inline;
+	float: left;
+	font-size: 1em;
+	margin: 0 -25px 0 25px;
+	padding: 7px 15px 5px 15px;
+	white-space: nowrap;
+}
+#subNavigation li a
+{
+	color: #636363;
+	font-weight: normal;
+	text-decoration: none;
+}
+#subNavigation li a:hover
+{
+	color: #444;
+	text-decoration: underline;
+}
+#subNavigation li.active a:hover
+{
+	text-decoration: none;
+}
+#subNavigation li strong
+{
+	color: #7FD7F7;
+}
