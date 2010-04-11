@@ -1,4 +1,4 @@
-<?php
+ï»¿<?php
 
 class Main extends Controller {
 
@@ -9,14 +9,14 @@ class Main extends Controller {
     
     function index()
     {
-		// Ìàññèâ äàííûõ
-        $data['title']  = 'Ãëàâíàÿ';
+		// ÐœÐ°ÑÑÐ¸Ð² Ð´Ð°Ð½Ð½Ñ‹Ñ…
+        $data['title']  = 'Ð“Ð»Ð°Ð²Ð½Ð°Ñ';
 		
-        // Ïîäãðóçêà ñòðàíèö èç îäíîèìåííûõ ôàéëîâ
+        // ÐŸÐ¾Ð´Ð³Ñ€ÑƒÐ·ÐºÐ° ÑÑ‚Ñ€Ð°Ð½Ð¸Ñ† Ð¸Ð· Ð¾Ð´Ð½Ð¾Ð¸Ð¼ÐµÐ½Ð½Ñ‹Ñ… Ñ„Ð°Ð¹Ð»Ð¾Ð²
 		// $partials = array('content'=>'about', 'sidebar'=>'help')
         $partials = array('content'=>'about', 'sidebar'=>'hello');
 		
-		// Ñîçäàíèå è çàãðóçêà ñòðàíèöû ñ äàííûìè
+		// Ð¡Ð¾Ð·Ð´Ð°Ð½Ð¸Ðµ Ð¸ Ð·Ð°Ð³Ñ€ÑƒÐ·ÐºÐ° ÑÑ‚Ñ€Ð°Ð½Ð¸Ñ†Ñ‹ Ñ Ð´Ð°Ð½Ð½Ñ‹Ð¼Ð¸
         $this->template->load('template_view', $partials, $data);
 		
     }
