@@ -1,3 +1,3 @@
-<? 
-echo "Ïðèâåò, %username%<hr>";
+ï»¿<? 
+echo "ÐŸÑ€Ð¸Ð²ÐµÑ‚, %username%<hr>";
 ?>
