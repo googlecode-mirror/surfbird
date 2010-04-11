@@ -1,4 +1,4 @@
-/* CSS Reset */
+п»ї/* CSS Reset */
  td,th,tr,thead,tfoot,tbody,caption,table,legend,label,form,fieldset,li,ul,ol,dd,dt,dl,center,i,u,b,var,tt,sup,sub,strong,strike,small,samp,s,q,kbd,ins,img,font,em,dfn,del,code,cite,big,address,acronym,abbr,a,pre,blockquote,p,h6,h5,h4,h3,h2,h1,iframe,object,applet,span,div,body,html{margin:0;padding:0;border:0;font-size:100%;vertical-align:baseline;background:transparent}td,th,tr,thead,tfoot,tbody,caption,table,legend,label,form,fieldset,li,ul,ol,dd,dt,dl,center,i,u,b,var,tt,sup,sub,strong,strike,small,samp,s,q,kbd,ins,img,font,em,dfn,del,code,cite,big,address,acronym,abbr,a,pre,blockquote,p,h6,h5,h4,h3,h2,h1,iframe,object,applet,span,div,body,html,:focus{outline:0}body{line-height:1}ul,ol{list-style:none}q,blockquote{quotes:none}q:after,q:before,blockquote:after,blockquote:before{content:'';content:none}ins{text-decoration:none}del{text-decoration:line-through}table{border-collapse:collapse;border-spacing:0}
 
 
@@ -7,7 +7,7 @@ body
 {
 	font-family: Helvetica,Arial,sans-serif;
 	font-size: 14px;
-	line-height: 1.5em; /* Расстояние между строками */
+	line-height: 1.5em; /* Р Р°СЃСЃС‚РѕСЏРЅРёРµ РјРµР¶РґСѓ СЃС‚СЂРѕРєР°РјРё */
 	background: white url(../../images/top_gradient.gif) top left repeat-x;
 	position: relative;
 	color:#444;
@@ -16,7 +16,7 @@ a
 {
 	color: #00AFF0;
 }
-а, a:hover, a:visited 
+Р°, a:hover, a:visited 
 {
 	color: #00AFF0;
 	text-decoration: none;

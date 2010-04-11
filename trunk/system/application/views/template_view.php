@@ -1,10 +1,10 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+п»ї<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <HTML xmlns="http://www.w3.org/1999/xhtml" xml:lang="ru" lang="ru">
 <HEAD>
 	<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
 	<TITLE>SurfBird - <?=$title;?></TITLE>
-	<META name="description" content="Surfing Bird - программа Попутчик">
-	<META name="keywords" content="SirfBird, Surfing Bird, попутчик, пробки">
+	<META name="description" content="Surfing Bird - РїСЂРѕРіСЂР°РјРјР° РџРѕРїСѓС‚С‡РёРє">
+	<META name="keywords" content="SirfBird, Surfing Bird, РїРѕРїСѓС‚С‡РёРє, РїСЂРѕР±РєРё">
 
 <!-- Icons -->
 	<LINK rel="icon" href="<?=base_url()?>images/icons/favicon.ico" type="image/vnd.microsoft.icon">
@@ -23,16 +23,16 @@
 <A href="<?=base_url()?>" id="SBLogo" title="Surfing Bird"><IMG src="<?=base_url()?>images/SBlogo.png" width="80" height="65" alt="Surfing Bird Logo"><DIV id="SBtitle">SurfBird</DIV></A>
 
 <DIV id="headerNavigation">
-<A href="<?=base_url()?>#">Войти в SurfBird</A> ·
-<A href="<?=base_url()?>help/">Помощь</A> · 
+<A href="<?=base_url()?>#">Р’РѕР№С‚Рё РІ SurfBird</A> В·
+<A href="<?=base_url()?>help/">РџРѕРјРѕС‰СЊ</A> В· 
 	<INPUT type="search">
 </DIV><!-- #headerNavigation -->
 </DIV><!-- #header -->
 
 <DIV id="mainNavigation">
 <UL>
-	<LI class="active"><A href="<?=base_url()?>" title="Главная">Главная</A></LI>
-	<LI><A href="/registration/" title="Регистрация">Регистрация</A></LI>
+	<LI class="active"><A href="<?=base_url()?>" title="Р“Р»Р°РІРЅР°СЏ">Р“Р»Р°РІРЅР°СЏ</A></LI>
+	<LI><A href="/registration/" title="Р РµРіРёСЃС‚СЂР°С†РёСЏ">Р РµРіРёСЃС‚СЂР°С†РёСЏ</A></LI>
 	<LI><A href="#" title="Page Three">Three</A></LI>
 	<LI><A href="#" title="Page Four">Four</A></LI>
 	<LI><A href="#" title="Page Five">Five</A></LI>
@@ -46,17 +46,17 @@
 
 	<DIV id="sidebar">
 		<DIV id="sidebarContent">
-			<?echo $sidebar; ?>
+			<?echo $s; ?>
 		</DIV><!-- #sidebarContent -->
 	</DIV><!-- #sidebar -->
 </DIV><!-- #container -->
 
 <DIV id="footer">
 	<DIV id="footerNavigation">
-		<A href="<?=base_url()?>about">О нас</A> · <A href="<?=base_url()?>help">Помощь</A> · <A href="<?=base_url()?>rules">Правила</A>
+		<A href="<?=base_url()?>about">Рћ РЅР°СЃ</A> В· <A href="<?=base_url()?>help">РџРѕРјРѕС‰СЊ</A> В· <A href="<?=base_url()?>rules">РџСЂР°РІРёР»Р°</A>
 	</DIV><!-- #footerNavigation -->
 	<DIV id="legalLinks">
-		<A href="<?=base_url()?>legallinks" title="">Положение о конфиденциальности</A> · <SPAN>© 2010 Surfing Bird</SPAN>
+		<A href="<?=base_url()?>legallinks" title="">РџРѕР»РѕР¶РµРЅРёРµ Рѕ РєРѕРЅС„РёРґРµРЅС†РёР°Р»СЊРЅРѕСЃС‚Рё</A> В· <SPAN>В© 2010 Surfing Bird</SPAN>
 	</DIV><!-- #legalLinks -->
 </DIV><!-- #footer -->
 
