@@ -21,7 +21,22 @@ a
 	color: #00AFF0;
 	text-decoration: none;
 }
-
+h1 {
+	font-size: 1.7em;
+	font-weight: bold;
+	color: #00AFF0;
+	padding: 0px 10px 20px 20px;
+}
+h1 info {
+	font-size: 0.5em;
+	color: #444;
+}
+h2 {
+	font-size: 1.1em;
+	font-weight: bold;
+	color: #00AFF0;
+	padding: 5px 10px 5px 20px;
+}
 
 /* Header */
 #header
@@ -123,7 +138,9 @@ a
 #content
 {
 	float: left;
-	width: 720px;
+	width: 700px;
+	border-right: #dddddd solid 1px;
+	padding: 0px 20px 0px 0px;
 }
 
 
@@ -134,8 +151,11 @@ a
 	color: #AFB4B4;
 	font-size: .786em;
 	height: 50px;
-	margin: 60px 0 0 0;
-	padding: 10px;
+	margin: 40px 0px 0px 0px;
+	clear: both;
+	float: left;
+	width: 100%;
+	display: block;
 }
 #footer a
 {
@@ -149,7 +169,7 @@ a
 #footerNavigation
 {
 	float: left;
-	padding: 0 0 0 20px;
+	padding: 20px 0 0 20px;
 }
 #footerNavigation select
 {
@@ -159,4 +179,5 @@ a
 {
 	float: right;
 	text-align: right;
+	padding: 20px 20px 0px 0px;
 }
