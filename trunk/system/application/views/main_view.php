@@ -20,7 +20,7 @@
 <BODY>
 
 <DIV id="header">
-<A href="<?=base_url()?>" id="SBLogo" title="SurfBird.com"><IMG src="<?=base_url()?>images/SBlogo.png" width="62" height="55" alt="Surfing Bird Logo"><DIV id="SBtitle">SurfBird.ru</DIV></A>
+<A href="<?=base_url()?>" id="SBLogo" title="Surfing Bird"><IMG src="<?=base_url()?>images/SBlogo.png" width="80" height="65" alt="Surfing Bird Logo"><DIV id="SBtitle">SurfBird</DIV></A>
 
 <DIV id="headerNavigation">
 <A href="<?=base_url()?>#">Войти в SurfBird</A> ·
