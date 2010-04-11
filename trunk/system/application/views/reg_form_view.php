@@ -1,5 +1,7 @@
 ﻿<h1>Регистрация<br /><info>Для работы с сервисом необходимо пройти регистрацию</info></h1>
+<ul class=errors>
 <?php echo $this->validation->error_string; ?>
+</ul>
 <?php echo form_open('registration'); ?>
 <table>
 	<tr>

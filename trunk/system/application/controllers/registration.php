@@ -11,6 +11,7 @@ class Registration extends Controller {
     {
 		// Подключим библиотеку валидации полей
 		$this->load->library('validation');
+		$this->validation->set_error_delimiters('<li>▪ ', '</li>');
 		
 		// Установим правила для валидации
 		$rules['login'] = "trim|required|min_length[3]|max_length[20]|xss_clean";
