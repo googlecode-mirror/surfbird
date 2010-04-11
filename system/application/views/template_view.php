@@ -2,7 +2,7 @@
 <HTML xmlns="http://www.w3.org/1999/xhtml" xml:lang="ru" lang="ru">
 <HEAD>
 	<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
-	<TITLE>SurfBird</TITLE>
+	<TITLE>SurfBird - <?=$title;?></TITLE>
 	<META name="description" content="Surfing Bird - программа Попутчик">
 	<META name="keywords" content="SirfBird, Surfing Bird, попутчик, пробки">
 
@@ -46,7 +46,7 @@
 
 	<DIV id="sidebar">
 		<DIV id="sidebarContent">
-			Сайдбар<br/>Сайдбар
+			<?echo $sidebar; ?>
 		</DIV><!-- #sidebarContent -->
 	</DIV><!-- #sidebar -->
 </DIV><!-- #container -->
