@@ -46,7 +46,7 @@
 
 	<DIV id="sidebar">
 		<DIV id="sidebarContent">
-			<?echo $s; ?>
+			<?echo $sidebar; ?>
 		</DIV><!-- #sidebarContent -->
 	</DIV><!-- #sidebar -->
 </DIV><!-- #container -->
