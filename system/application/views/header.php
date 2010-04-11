@@ -1,6 +1,6 @@
-
-<html>
-    <HEAD>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<HTML xmlns="http://www.w3.org/1999/xhtml" xml:lang="ru" lang="ru">
+<HEAD>
 	<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
 	<TITLE>SurfBird</TITLE>
 	<META name="description" content="Surfing Bird - программа Попутчик">
@@ -13,36 +13,31 @@
 
 <!-- CSS -->
 	<LINK rel="stylesheet" href="<?=base_url()?>css/style.css" type="text/css">
-	<LINK rel="stylesheet" href="<?=base_url()?>css/download.css" type="text/css">
-
+	
 <!-- Javascripts -->
 
 </HEAD>
+<BODY>
+
 <DIV id="header">
-<A href="<?=base_url()?>" id="SBLogo" title="SurfBird.com"><IMG src="<?=base_url()?>images/SBlogo.png" width="62" height="55" alt="Surfing Bird Logo"></A>
+<A href="<?=base_url()?>" id="SBLogo" title="SurfBird.com"><IMG src="<?=base_url()?>images/SBlogo.png" width="62" height="55" alt="Surfing Bird Logo"></A><DIV id="SBtitle">SurfBird.ru</DIV></A>
 
 <DIV id="headerNavigation">
-<SPAN id="loggedin-welcome" style="display: none">Привет, <SPAN id="loggedin-username"></SPAN>!</SPAN>
-<SPAN id="loggedin-links" style="display: none"><A href="#">Профиль</A> ·</SPAN>
-<SPAN id="loggedin-settings" style="display: none"><A href="#">Настройки</A> ·</SPAN>
-<SPAN id="loggedin-signin"><A href="#">Войти в SurfBird</A> ·</SPAN>
-<SPAN id="loggedin-signout" style="display: none"><A href="#">Выйти из сети</A> ·</SPAN>
-<A href="help/">Помощь</A> ·
-<FORM id="SearchForm" method="get" action="">
-	<DIV id="searchSet">
-		<INPUT type="search">
-	</DIV>
-</FORM><!-- #SearchForm -->
+<A href="#">Войти в SurfBird</A> ·
+<A href="help/">Помощь</A> · 
+	<INPUT type="search">
 </DIV><!-- #headerNavigation -->
 </DIV><!-- #header -->
+
 <DIV id="mainNavigation">
 <UL>
-	<LI class="active"><A href="<?=base_url()?>" title="Home"><STRONG>One</STRONG></A></LI>
-	<LI><A href="/registration/" title="Registration">Two</A></LI>
+	<LI class="active"><A href="<?=base_url()?>" title="Главная">Главная</A></LI>
+	<LI><A href="/registration/" title="Регистрация">Регистрация</A></LI>
 	<LI><A href="#" title="Page Three">Three</A></LI>
 	<LI><A href="#" title="Page Four">Four</A></LI>
 	<LI><A href="#" title="Page Five">Five</A></LI>
 </UL>
 </DIV><!-- #mainNavigation -->
-        </html>
-
+	
+<DIV id="container" class="sidebar">
+	<DIV id="content">
