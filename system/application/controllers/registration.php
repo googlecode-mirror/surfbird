@@ -21,7 +21,7 @@ class Registration extends Controller {
 		$rules['phone'] = "trim|min_length[11]|max_length[15]|alpha_dash";
 		$rules['skype'] = "trim|min_length[6]|max_length[32]|alpha_numeric";
 		$rules['vk'] = "trim|min_length[1]|max_length[9]|numeric";
-		$rules['name'] = "trim|min_length[3]|max_length[15]|alpha";
+		$rules['name'] = "trim|min_length[3]|max_length[15]|xss_clean";
 		
 		// Применяем правила
 		$this->validation->set_rules($rules);
