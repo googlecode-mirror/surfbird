@@ -8,8 +8,9 @@ body
 	font-family: Helvetica,Arial,sans-serif;
 	font-size: 14px;
 	line-height: 1.5em; /* Расстояние между строками */
-	background: white url(images/top_gradient.gif) top left repeat-x;
+	background: white url(../../images/top_gradient.gif) top left repeat-x;
 	position: relative;
+	color:#444;
 }
 a 
 {
@@ -77,11 +78,14 @@ a:hover, a:visited
 }
 #mainNavigation li a 
 {
+	color: #444;
+}
+#mainNavigation li a:hover
+{
 	color: white;
 }
 #mainNavigation li
 {	
-	color: white;
 	float: left;
 	font-size: 1.2em;
 	font-weight: bold;
@@ -125,7 +129,7 @@ a:hover, a:visited
 /* Footer */
 #footer
 {
-	background: white url(images/bottom_gradient.png) top left repeat-x;
+	background: white url(../../images/bottom_gradient.png) top left repeat-x;
 	color: #AFB4B4;
 	font-size: .786em;
 	height: 50px;
