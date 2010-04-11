@@ -69,6 +69,7 @@ a
 	/*background: white url(images/navigation_blue.png) bottom left repeat-x;*/
 	background: #83ddff;
 	min-height: 31px;
+	border-bottom: #00AFF0 solid 5px;
 }
 #mainNavigation ul
 {
