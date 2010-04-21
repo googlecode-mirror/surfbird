@@ -11,10 +11,6 @@ body
 	position: relative;
 	color:#444;
 }
-a 
-{
-	color: #00AFF0;
-}
 а, a:hover, a:visited 
 {
 	color: #00AFF0;
@@ -27,10 +23,13 @@ h1 {
 	padding: 0px 10px 20px 20px;
 }
 h2 {
+	background: #83DDFF;
 	font-size: 1.1em;
 	font-weight: bold;
-	color: #00AFF0;
+	color: #444;
 	padding: 5px 10px 5px 20px;
+	margin: 5px 0px 5px 0px;
+	border-bottom: 2px solid #00AFF0;
 }
 info {
 	font-size: 0.9em;
@@ -52,7 +51,7 @@ ul.errors li {
 button, input[type=submit] {
 	background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(rgb(255, 255, 255)), to(rgb(188, 234, 251)));
 	border: solid 1px rgb(54, 192, 243);
-	color: #333;
+	color: #444;
 	cursor: pointer;
 	display: inline-block;
 	line-height: 1;
@@ -60,13 +59,31 @@ button, input[type=submit] {
 	text-align: center;
 	text-decoration: none;
 	text-shadow: 0px 1px 1px rgba(255,255,255,1);
-	-webkit-border-radius: 2px 2px;
+	border-radius: 3px 3px;
 }
 button:hover, input[type=submit]:hover {
-	background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(rgb(248, 248, 248)), to(rgb(221, 221, 221)));
+	background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(rgb(255, 255, 255)), to(rgb(220, 255, 255)));
 }
 button:active, input[type=submit]:active {
 	background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(rgb(204, 204, 204)), to(rgb(221, 221, 221)));
+}
+input[type=text] {
+	background: #FFF;
+	border: solid 1px rgb(54, 192, 243);
+	color: #444;
+	line-height: 1;
+	padding: 3px 5px;
+	text-align: left;
+	text-decoration: none;
+	border-radius: 3px 3px;
+}
+.helper {
+	font-size: 0.9em;
+	line-height: 1.5em; /* Расстояние между строками */
+	color:#444;
+}
+hr {
+	border: #00AFF0 solid 1px;
 }
 
 /* Header */
@@ -100,8 +117,13 @@ button:active, input[type=submit]:active {
 }
 #headerNavigation a
 {
+	color: #636363;
 	margin: 0 4px;
 	text-decoration: none;
+}
+#headerNavigation a:hover
+{
+	color: #00AFF0;
 }
 #headerNavigation input
 {
@@ -125,6 +147,7 @@ button:active, input[type=submit]:active {
 }
 #mainNavigation li a 
 {
+	text-decoration: none;
 	color: #444;
 }
 #mainNavigation li a:hover
