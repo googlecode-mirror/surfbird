@@ -4,13 +4,14 @@ class Registration extends Controller {
 
 	function __construct()
 	{
-		parent::Controller();    
+		parent::Controller();
 	}
 
 	function index()
 	{
 		// Подключим библиотеку валидации полей
 		$this->load->library('validation');
+		$this->lang->load('help');
 		$this->validation->set_error_delimiters('<li>▪ ', '</li>');
 		
 		// Установим правила для валидации
@@ -18,12 +19,7 @@ class Registration extends Controller {
 		$rules['password'] = "trim|required|min_length[6]|max_length[32]|matches[passconf]|md5";
 		$rules['passconf'] = "trim|required";
 		$rules['email'] = "trim|required|valid_email";
-		$rules['icq'] = "trim|min_length[6]|max_length[9]|numeric";
-		$rules['phone'] = "trim|min_length[11]|max_length[15]|alpha_dash";
-		$rules['skype'] = "trim|min_length[6]|max_length[32]|alpha_numeric";
-		$rules['vk'] = "trim|min_length[1]|max_length[9]|numeric";
-		$rules['name'] = "trim|min_length[3]|max_length[15]|xss_clean";
-		
+
 		// Применяем правила
 		$this->validation->set_rules($rules);
 		
@@ -32,26 +28,16 @@ class Registration extends Controller {
 		$data['email'] = array('name' => 'email', 'id' => 'email');
 		$data['password'] = array('name' => 'password', 'id' => 'password');
 		$data['passconf'] = array('name' => 'passconf', 'id' => 'passconf');
-		$data['icq'] = array('name' => 'icq', 'id' => 'icq');
-		$data['phone'] = array('name' => 'phone', 'id' => 'phone');
-		$data['skype'] = array('name' => 'skype', 'id' => 'skype');
-		$data['vk'] = array('name' => 'vk', 'id' => 'vk');
-		$data['name'] = array('name' => 'name', 'id' => 'name');
-		
-		$data['male'] = array('name' => 'sex[]', 'value' => 'male', 'checked' => FALSE);
-		$data['female'] = array('name' => 'sex[]', 'value' => 'female', 'checked' => FALSE);
-		
-		$data['have_car'] = array('name' => 'car', 'value' => 'have_car', 'checked' => FALSE);
-		$data['no_car'] = array('name' => 'car', 'value' => 'no_car', 'checked' => FALSE);
-		
+
 		if ($this->validation->run() == FALSE)
 		{
 			// Массив данных
-			$data['title']  = 'Регистрация';
+			$data['title'] = 'Регистрация';
+			$data['help'] = $this->lang->line('help_reg_about');
 			
 			// Подгрузка страниц из одноименных файлов
 			// $partials = array('content'=>'about', 'sidebar'=>'help')
-			$partials = array('content'=>'reg_form_view', 'sidebar'=>'helper');
+			$partials = array('content'=>'reg_form_view', 'sidebar'=>'helper_view');
 
 			// Создание и загрузка страницы с данными
 			$this->template->load('template_view', $partials, $data);

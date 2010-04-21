@@ -6,7 +6,7 @@
 <table width=100% class=regform>
 	<tr>
 		<td colspan=2><h2>Заполните поля формы</h2></td>
-		<td width=50> или </td>
+		<td width=50></td>
 		<td><h2>Зарегистрируйтесь в два клика</h2></td>
 	</tr>
 	<tr class=line>
