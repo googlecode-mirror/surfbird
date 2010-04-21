@@ -1,68 +1,42 @@
-﻿<h1>Регистрация<br /><info>Для работы с сервисом необходимо пройти регистрацию</info></h1>
+﻿<h1>Регистрация</h1>
 <ul class=errors>
 <?php echo $this->validation->error_string; ?>
 </ul>
 <?php echo form_open('registration'); ?>
-<table>
+<table width=100% class=regform>
 	<tr>
-		<td colspan=2><h2>Обязательная информация</h2></td>
+		<td colspan=2><h2>Заполните поля формы</h2></td>
+		<td width=50> или </td>
+		<td><h2>Зарегистрируйтесь в два клика</h2></td>
 	</tr>
-	<tr>
+	<tr class=line>
 		<td width=150>Логин</td>
 		<td><?php echo form_input($login); ?>*</td>
+		<td></td>
+		<td><center><button>Я имею аккаунт Вконтакте</button></center></td>
 	</tr>
-	<tr>
+	<tr class=line>
 		<td>Пароль</td>
 		<td><?php echo form_input($password); ?>*</td>
+		<td></td>
+		<td><center><button>Я имею аккаунт Google</button></center></td>
 	</tr>
-	<tr>
+	<tr class=line>
 		<td>Подтвердите пароль</td>
 		<td><?php echo form_input($passconf); ?>*</td>
+		<td></td>
+		<td><center><button>Я имею аккаунт Яндекс</button></center></td>
 	</tr>
-	<tr>
+	<tr class=line>
 		<td>E-mail</td>
 		<td><?php echo form_input($email); ?>*</td>
+		<td></td>
+		<td><center><button>Я имею аккаунт OpenID</button></center></td>
 	</tr>
-	<tr>
-		<td colspan=2><h2>Контактная информация</h2></td>
-	</tr>
-	<tr>
-		<td>ICQ</td>
-		<td><?php echo form_input($icq); ?></td>
-	</tr>
-	<tr>
-		<td>Моб. телефон</td>
-		<td><?php echo form_input($phone); ?></td>
-	</tr>
-	<tr>
-		<td>Skype</td>
-		<td><?php echo form_input($skype); ?></td>
-	</tr>
-	<tr>
-		<td>ID Вконтакте</td>
-		<td><?php echo form_input($vk); ?></td>
-	</tr>
-	<tr>
-		<td colspan=2><h2>Дополнительная информация</h2></td>
-	</tr>
-	<tr>
-		<td>Имя</td>
-		<td><?php echo form_input($name); ?></td>
-	</tr>
-	<tr>
-		<td>Пол</td>
-		<td><?php echo form_radio($male); ?>Мужской<br />
-			<?php echo form_radio($female); ?>Женский</td>
-	</tr>
-	<tr>
-		<td>Вы водите машину?</td>
-		<td><?php echo form_radio($car); ?>Да<br />
-			<?php echo form_radio($no_car); ?>Нет</td>
-	</tr>
-	<tr>
+	<tr class=line>
 		<td colspan=2>
-		<center><?php echo form_submit('submit', 'Завершить регистрацию'); ?></center>
-		</td>
+		<center><br /><?php echo form_submit('submit', 'Завершить регистрацию'); ?></center></td>
+		<td colspan=2></td>
 	</tr>
 </table>
 <?php echo form_close(); ?>

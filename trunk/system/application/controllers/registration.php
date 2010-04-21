@@ -2,20 +2,20 @@
 
 class Registration extends Controller {
 
-    function __construct()
-    {
-        parent::Controller();    
-    }
-    
-    function index()
-    {
+	function __construct()
+	{
+		parent::Controller();    
+	}
+
+	function index()
+	{
 		// Подключим библиотеку валидации полей
 		$this->load->library('validation');
 		$this->validation->set_error_delimiters('<li>▪ ', '</li>');
 		
 		// Установим правила для валидации
 		$rules['login'] = "trim|required|min_length[3]|max_length[20]|xss_clean";
-		$rules['password'] = "trim|required|min_length[6]|max_length[32]|matches[passconf]";
+		$rules['password'] = "trim|required|min_length[6]|max_length[32]|matches[passconf]|md5";
 		$rules['passconf'] = "trim|required";
 		$rules['email'] = "trim|required|valid_email";
 		$rules['icq'] = "trim|min_length[6]|max_length[9]|numeric";
@@ -37,10 +37,12 @@ class Registration extends Controller {
 		$data['skype'] = array('name' => 'skype', 'id' => 'skype');
 		$data['vk'] = array('name' => 'vk', 'id' => 'vk');
 		$data['name'] = array('name' => 'name', 'id' => 'name');
-		$data['male'] = array('name' => 'sex[]', 'id' => 'male', 'checked' => FALSE);
-		$data['female'] = array('name' => 'sex[]', 'id' => 'female', 'checked' => FALSE);
-		$data['car'] = array('name' => 'car[]', 'id' => 'car', 'checked' => FALSE);
-		$data['no_car'] = array('name' => 'car[]', 'id' => 'no_car', 'checked' => FALSE);
+		
+		$data['male'] = array('name' => 'sex[]', 'value' => 'male', 'checked' => FALSE);
+		$data['female'] = array('name' => 'sex[]', 'value' => 'female', 'checked' => FALSE);
+		
+		$data['have_car'] = array('name' => 'car', 'value' => 'have_car', 'checked' => FALSE);
+		$data['no_car'] = array('name' => 'car', 'value' => 'no_car', 'checked' => FALSE);
 		
 		if ($this->validation->run() == FALSE)
 		{
@@ -49,8 +51,8 @@ class Registration extends Controller {
 			
 			// Подгрузка страниц из одноименных файлов
 			// $partials = array('content'=>'about', 'sidebar'=>'help')
-			$partials = array('content'=>'reg_form_view', 'sidebar'=>'hello');
-			
+			$partials = array('content'=>'reg_form_view', 'sidebar'=>'helper');
+
 			// Создание и загрузка страницы с данными
 			$this->template->load('template_view', $partials, $data);
 		}
@@ -62,11 +64,12 @@ class Registration extends Controller {
 			// Подгрузка страниц из одноименных файлов
 			// $partials = array('content'=>'about', 'sidebar'=>'help')
 			$partials = array('content'=>'form_success_view', 'sidebar'=>'hello');
-			
+			$this->load->model('registration_model','', TRUE);
+			$this->registration_model->add_user();
 			// Создание и загрузка страницы с данными
 			$this->template->load('template_view', $partials, $data);
 		}
 		
-    }
+	}
 }
 ?>

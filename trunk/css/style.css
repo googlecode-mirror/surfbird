@@ -1,7 +1,6 @@
 ﻿/* CSS Reset */
  td,th,tr,thead,tfoot,tbody,caption,table,legend,label,form,fieldset,li,ul,ol,dd,dt,dl,center,i,u,b,var,tt,sup,sub,strong,strike,small,samp,s,q,kbd,ins,img,font,em,dfn,del,code,cite,big,address,acronym,abbr,a,pre,blockquote,p,h6,h5,h4,h3,h2,h1,iframe,object,applet,span,div,body,html{margin:0;padding:0;border:0;font-size:100%;vertical-align:baseline;background:transparent}td,th,tr,thead,tfoot,tbody,caption,table,legend,label,form,fieldset,li,ul,ol,dd,dt,dl,center,i,u,b,var,tt,sup,sub,strong,strike,small,samp,s,q,kbd,ins,img,font,em,dfn,del,code,cite,big,address,acronym,abbr,a,pre,blockquote,p,h6,h5,h4,h3,h2,h1,iframe,object,applet,span,div,body,html,:focus{outline:0}body{line-height:1}ul,ol{list-style:none}q,blockquote{quotes:none}q:after,q:before,blockquote:after,blockquote:before{content:'';content:none}ins{text-decoration:none}del{text-decoration:line-through}table{border-collapse:collapse;border-spacing:0}
 
-
 /* Main CSS*/
 body 
 {
@@ -27,15 +26,15 @@ h1 {
 	color: #00AFF0;
 	padding: 0px 10px 20px 20px;
 }
-h1 info {
-	font-size: 0.5em;
-	color: #444;
-}
 h2 {
 	font-size: 1.1em;
 	font-weight: bold;
 	color: #00AFF0;
 	padding: 5px 10px 5px 20px;
+}
+info {
+	font-size: 0.9em;
+	color: #444;
 }
 ul.errors {
 	color: #CC0000;
@@ -50,7 +49,25 @@ ul.errors li {
 	background-color: #FFCECE; /* Цвет фона */
 	padding: 0px 0px 2px 30px;
 }
-
+button, input[type=submit] {
+	background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(rgb(255, 255, 255)), to(rgb(188, 234, 251)));
+	border: solid 1px rgb(54, 192, 243);
+	color: #333;
+	cursor: pointer;
+	display: inline-block;
+	line-height: 1;
+	padding: 4px 7px;
+	text-align: center;
+	text-decoration: none;
+	text-shadow: 0px 1px 1px rgba(255,255,255,1);
+	-webkit-border-radius: 2px 2px;
+}
+button:hover, input[type=submit]:hover {
+	background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(rgb(248, 248, 248)), to(rgb(221, 221, 221)));
+}
+button:active, input[type=submit]:active {
+	background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(rgb(204, 204, 204)), to(rgb(221, 221, 221)));
+}
 
 /* Header */
 #header
@@ -156,7 +173,9 @@ ul.errors li {
 	border-right: #dddddd solid 1px;
 	padding: 0px 20px 0px 0px;
 }
-
+table.regform tr.line {
+	#height: 50px;
+}
 
 /* Footer */
 #footer
